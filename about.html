@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About the Studio — Visualart</title>
+    <meta
+      name="description"
+      content="The story behind Visualart — original photography, printed with care on gallery-wrapped canvas and made to order."
+    />
+    <meta name="theme-color" content="#0c0c0e" />
+    <meta property="og:title" content="About the Studio — Visualart" />
+    <meta property="og:image" content="https://picsum.photos/seed/va_022/1200/630" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://picsum.photos" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script>
+      try {
+        var t = localStorage.getItem("va-theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main>
+      <section class="section wrap">
+        <div class="about-hero">
+          <div data-reveal>
+            <span class="eyebrow">The Studio</span>
+            <h1 class="display" style="font-size: clamp(2.6rem, 6vw, 5rem); margin-top: 1rem">
+              Photographs, <span class="serif-italic text-accent">made to live on walls.</span>
+            </h1>
+            <p class="lede" style="margin-top: 1.5rem">
+              Visualart began with a simple habit: chasing light. Thousands of frames later, it became
+              a gallery — a place to bring those moments home as canvas you can actually hang.
+            </p>
+          </div>
+          <div class="about-hero__media" data-reveal data-reveal-delay="1">
+            <img data-src="https://picsum.photos/seed/va_022/900/1100" alt="A framed photographic print" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section--tight wrap">
+        <div class="prose">
+          <p>
+            Every image in this gallery is an original work — no stock, no filters borrowed from
+            someone else's eye. The collections move between wide, quiet landscapes and the sharp
+            geometry of cities, but they're all searching for the same thing: a moment of stillness
+            worth keeping.
+          </p>
+          <p>
+            When you find a piece you love, we print it on premium, gallery-wrapped canvas stretched
+            over a 1.5″ solid wood frame and ship it ready to hang. Each canvas is produced to order
+            through Pictorem, a professional fine-art print house — nothing sits in a warehouse, and
+            nothing is mass-produced.
+          </p>
+        </div>
+      </section>
+
+      <section class="section wrap" id="process">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="eyebrow">How it works</span>
+            <h2 class="section-title">A simple, personal process</h2>
+          </div>
+        </div>
+        <div class="process">
+          <div class="process__step" data-reveal>
+            <h3>Browse &amp; choose</h3>
+            <p>Explore the gallery and pick the photograph that stops you. Filter by collection, search by mood.</p>
+          </div>
+          <div class="process__step" data-reveal data-reveal-delay="1">
+            <h3>Size &amp; price</h3>
+            <p>Select a canvas size and see the price update live. Bigger statement or intimate accent — your call.</p>
+          </div>
+          <div class="process__step" data-reveal data-reveal-delay="2">
+            <h3>Pay securely</h3>
+            <p>Check out with PayPal or Cash App. No card details ever touch this site — just a confirmation.</p>
+          </div>
+          <div class="process__step" data-reveal data-reveal-delay="3">
+            <h3>Made &amp; shipped</h3>
+            <p>We verify, produce your canvas to order, and ship it to your door ready to hang.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section wrap">
+        <div class="cta-band" data-reveal>
+          <span class="eyebrow">Begin</span>
+          <h2>Your walls are waiting.</h2>
+          <p>Step into the gallery and find the photograph that belongs in your space.</p>
+          <a class="btn btn--primary btn--lg" href="gallery.html">Explore the Gallery
+            <span class="btn__icon btn__icon--arrow"></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

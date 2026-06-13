@@ -1,0 +1,16 @@
+{
+  "name": "visualart",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Visualart — a curated gallery of original photography, printed on gallery-wrapped canvas and made to order. Buildless static site.",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "catalog": "node scripts/generate-catalog.mjs",
+    "catalog:local": "node scripts/build-catalog-from-photos.mjs",
+    "validate": "node scripts/validate-catalog.mjs"
+  },
+  "keywords": ["photography", "gallery", "canvas", "art", "static-site"],
+  "license": "MIT"
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualart — Photograph</title>
+    <meta name="description" content="View this original photograph and choose your gallery-wrapped canvas size." />
+    <meta name="theme-color" content="#0c0c0e" />
+
+    <meta property="og:type" content="product" />
+    <meta property="og:title" content="Visualart — Photograph" />
+    <meta property="og:image" content="" id="og-image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://picsum.photos" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script>
+      try {
+        var t = localStorage.getItem("va-theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main class="wrap" style="padding-top: clamp(1.5rem, 4vw, 2.5rem)">
+      <a class="back-link" href="gallery.html"><span data-icon="arrowLeft"></span> Back to gallery</a>
+
+      <div id="product-root">
+        <!-- Skeleton -->
+        <div class="product" id="product-skeleton">
+          <div class="product__frame"><div class="tile--skeleton"><div class="sk" style="height:520px"></div></div></div>
+          <div>
+            <div class="tile--skeleton"><div class="sk" style="height:28px;width:40%;border-radius:4px"></div></div>
+            <div class="tile--skeleton" style="margin-top:1rem"><div class="sk" style="height:48px;width:80%;border-radius:4px"></div></div>
+            <div class="tile--skeleton" style="margin-top:1.5rem"><div class="sk" style="height:120px;border-radius:4px"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related -->
+      <section class="section" id="related-section" hidden>
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="eyebrow">More like this</span>
+            <h2 class="section-title">From the same collection</h2>
+          </div>
+          <a class="btn btn--ghost" id="related-all" href="gallery.html">View collection
+            <span class="btn__icon btn__icon--arrow"></span>
+          </a>
+        </div>
+        <div class="masonry" id="related-grid"></div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/product.js"></script>
+  </body>
+</html>
