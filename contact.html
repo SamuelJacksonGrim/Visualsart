@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Visualart</title>
+    <meta name="description" content="Get in touch with Visualart — questions, commissions, custom sizes and bulk orders welcome." />
+    <meta name="theme-color" content="#0c0c0e" />
+    <meta property="og:title" content="Contact — Visualart" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script>
+      try {
+        var t = localStorage.getItem("va-theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main class="wrap" style="padding-top: clamp(2rem, 5vw, 4rem)">
+      <div class="page-head">
+        <span class="eyebrow">Say hello</span>
+        <h1 style="font-size: clamp(2.4rem, 6vw, 4.4rem); margin-top: .6rem">Get in touch</h1>
+      </div>
+
+      <div class="contact">
+        <div data-reveal>
+          <p class="lede" style="margin-bottom: 2.5rem">
+            Questions about a piece, a custom size, a commission, or a bulk order for a space? Send a
+            note — we read every message.
+          </p>
+
+          <form id="contact-form" novalidate>
+            <div class="field-grid">
+              <div class="field">
+                <label for="c-name">Name <span class="req">*</span></label>
+                <input class="input" id="c-name" name="name" type="text" autocomplete="name" required />
+                <span class="field__error"></span>
+              </div>
+              <div class="field">
+                <label for="c-email">Email <span class="req">*</span></label>
+                <input class="input" id="c-email" name="email" type="email" autocomplete="email" required />
+                <span class="field__error"></span>
+              </div>
+              <div class="field col-span">
+                <label for="c-subject">Subject</label>
+                <input class="input" id="c-subject" name="subject" type="text" />
+              </div>
+              <div class="field col-span">
+                <label for="c-message">Message <span class="req">*</span></label>
+                <textarea class="textarea" id="c-message" name="message" required></textarea>
+                <span class="field__error"></span>
+              </div>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" id="c-submit" style="margin-top: 1.5rem">
+              Send Message
+              <span class="btn__icon btn__icon--arrow"></span>
+            </button>
+          </form>
+        </div>
+
+        <aside class="contact-info" data-reveal data-reveal-delay="1">
+          <div class="contact-info__item">
+            <span class="contact-info__icon" data-icon="mail"></span>
+            <div>
+              <h4>Email</h4>
+              <p><a id="contact-email" href="#">—</a></p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <span class="contact-info__icon" data-icon="clock"></span>
+            <div>
+              <h4>Response time</h4>
+              <p>Usually within 1–2 business days.</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <span class="contact-info__icon" data-icon="frame"></span>
+            <div>
+              <h4>Custom &amp; commissions</h4>
+              <p>Need a specific size or a piece you don't see? Just ask.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- FAQ -->
+      <section class="section" id="faq">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="eyebrow">Good to know</span>
+            <h2 class="section-title">Frequently asked</h2>
+          </div>
+        </div>
+        <div class="faq" id="faq-list">
+          <div class="faq__item">
+            <button class="faq__q">How are payments handled? <span class="faq__icon" data-icon="plus"></span></button>
+            <div class="faq__a"><div class="faq__a-inner">We accept PayPal and Cash App. You pay directly through their secure apps — no card information is ever entered on this website. After paying, you add your transaction ID or a screenshot to the order form so we can verify and produce your canvas.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">How long until my canvas arrives? <span class="faq__icon" data-icon="plus"></span></button>
+            <div class="faq__a"><div class="faq__a-inner">Every canvas is made to order. Production typically takes a few business days, plus shipping time. You'll get a confirmation email once your piece enters production.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">What are the canvases like? <span class="faq__icon" data-icon="plus"></span></button>
+            <div class="faq__a"><div class="faq__a-inner">Prints are produced on premium artist-grade canvas, gallery-wrapped over a 1.5″ solid wood frame, and shipped ready to hang — no extra framing required.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">Can I request a custom size? <span class="faq__icon" data-icon="plus"></span></button>
+            <div class="faq__a"><div class="faq__a-inner">Absolutely. If you don't see the size you want on a piece, send us a message and we'll arrange it.</div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q">Do you ship internationally? <span class="faq__icon" data-icon="plus"></span></button>
+            <div class="faq__a"><div class="faq__a-inner">Shipping is confirmed per order. Reach out with your location and the piece you're after and we'll sort out the details.</div></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/contact.js"></script>
+  </body>
+</html>

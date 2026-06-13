@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Not Found — Visualart</title>
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script>
+      try {
+        var t = localStorage.getItem("va-theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="site-header"></div>
+    <main class="wrap">
+      <div class="order-success">
+        <div class="display" style="font-size: clamp(4rem, 16vw, 9rem); color: var(--accent)">404</div>
+        <h1 style="margin-top: 0">This frame is empty</h1>
+        <p>The page you're looking for has moved or never hung here. Let's get you back to the art.</p>
+        <div class="hero__actions" style="justify-content: center; margin-top: 2rem">
+          <a class="btn btn--primary btn--lg" href="gallery.html">Open the Gallery
+            <span class="btn__icon btn__icon--arrow"></span>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="index.html">Back home</a>
+        </div>
+      </div>
+    </main>
+    <div id="site-footer"></div>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

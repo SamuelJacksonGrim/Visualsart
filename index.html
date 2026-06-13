@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualart — Original Photography on Gallery Canvas</title>
+    <meta
+      name="description"
+      content="Visualart is a curated gallery of original photographs, printed on premium gallery-wrapped canvas and made to order. Browse collections, choose your size, and bring the work home."
+    />
+    <meta name="theme-color" content="#0c0c0e" />
+    <link rel="canonical" href="https://visualart.studio/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Visualart — Original Photography on Gallery Canvas" />
+    <meta
+      property="og:description"
+      content="A curated gallery of original photographs, printed on premium canvas and made to order."
+    />
+    <meta property="og:image" content="https://picsum.photos/seed/va_001/1200/630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://picsum.photos" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Prevent theme flash -->
+    <script>
+      try {
+        var t = localStorage.getItem("va-theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    </script>
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Visualart Studio",
+        "description": "Original photography printed on gallery-wrapped canvas, made to order.",
+        "image": "https://picsum.photos/seed/va_001/1200/630",
+        "priceRange": "$$"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main>
+      <!-- ============================ HERO ============================ -->
+      <section class="hero">
+        <div class="hero__media">
+          <img id="hero-img" alt="" aria-hidden="true" />
+        </div>
+        <div class="hero__inner wrap">
+          <span class="eyebrow" data-reveal>Original Photography · Gallery Canvas</span>
+          <h1 class="display hero__title" data-reveal data-reveal-delay="1">
+            The world, <em>framed</em> for your wall.
+          </h1>
+          <p class="lede hero__lede" data-reveal data-reveal-delay="2">
+            Thousands of original photographs — landscapes, cityscapes, and quiet abstractions —
+            printed on premium gallery-wrapped canvas and made to order, just for you.
+          </p>
+          <div class="hero__actions" data-reveal data-reveal-delay="3">
+            <a class="btn btn--primary btn--lg" href="gallery.html">
+              Browse the Gallery
+              <span class="btn__icon btn__icon--arrow"></span>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#collections">View Collections</a>
+          </div>
+        </div>
+        <a class="hero__scroll" href="#collections" aria-label="Scroll to collections">
+          Scroll
+          <span class="hero__scroll-line"></span>
+        </a>
+      </section>
+
+      <!-- ============================ STATS ============================ -->
+      <section class="stat-strip" aria-label="At a glance">
+        <div class="stat">
+          <div class="stat__num" id="stat-pieces">—</div>
+          <div class="stat__label">Original Works</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" id="stat-collections">8</div>
+          <div class="stat__label">Curated Collections</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">100%</div>
+          <div class="stat__label">Made To Order</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">1.5″</div>
+          <div class="stat__label">Gallery-Wrapped Depth</div>
+        </div>
+      </section>
+
+      <!-- ======================= FEATURED STRIP ======================= -->
+      <section class="section section--tight wrap">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="eyebrow">Hand-picked</span>
+            <h2 class="section-title">Featured this season</h2>
+          </div>
+          <a class="btn btn--ghost" href="gallery.html?sort=featured">See all featured
+            <span class="btn__icon btn__icon--arrow"></span>
+          </a>
+        </div>
+        <div class="masonry" id="featured-grid" style="columns: 4"></div>
+      </section>
+
+      <!-- ======================= COLLECTIONS ========================== -->
+      <section class="section wrap" id="collections">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="eyebrow">Browse by mood</span>
+            <h2 class="section-title">Eight ways to see the world</h2>
+          </div>
+          <p class="lede" style="font-size: 1rem">
+            Every collection is drawn from the same eye — a search for light, geometry and stillness.
+          </p>
+        </div>
+        <div class="collections" id="collections-grid"></div>
+      </section>
+
+      <!-- ======================= HOW IT WORKS ========================= -->
+      <section class="section wrap">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="eyebrow">Simple &amp; personal</span>
+            <h2 class="section-title">From screen to wall in four steps</h2>
+          </div>
+        </div>
+        <div class="process">
+          <div class="process__step" data-reveal>
+            <h3>Choose a piece</h3>
+            <p>Browse the gallery and pick the photograph that speaks to you.</p>
+          </div>
+          <div class="process__step" data-reveal data-reveal-delay="1">
+            <h3>Pick your size</h3>
+            <p>Select from gallery-wrapped canvas sizes with live pricing.</p>
+          </div>
+          <div class="process__step" data-reveal data-reveal-delay="2">
+            <h3>Pay securely</h3>
+            <p>Check out safely with PayPal or Cash App — no card data on our site.</p>
+          </div>
+          <div class="process__step" data-reveal data-reveal-delay="3">
+            <h3>We make it</h3>
+            <p>Your canvas is printed to order and shipped ready to hang.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================== CTA BAND ========================== -->
+      <section class="section wrap">
+        <div class="cta-band" data-reveal>
+          <span class="eyebrow">Ready when you are</span>
+          <h2>Find the one piece that makes the room.</h2>
+          <p>
+            Thousands of originals, gallery-wrapped and made to order. Start with the full gallery or
+            tell us what you're looking for.
+          </p>
+          <div class="hero__actions" style="justify-content: center">
+            <a class="btn btn--primary btn--lg" href="gallery.html">Enter the Gallery
+              <span class="btn__icon btn__icon--arrow"></span>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="contact.html">Commission / Ask</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/home.js"></script>
+  </body>
+</html>

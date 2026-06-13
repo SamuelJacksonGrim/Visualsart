@@ -1,0 +1,17 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Local env / secrets (config.js itself is safe to commit)
+.env
+.env.local
+
+# Build / test artifacts
+scripts/shots/
