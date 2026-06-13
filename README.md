@@ -28,6 +28,10 @@ fulfillment**. It's a complete, buildless static site:
 The studio receives each order by email and places the print order through
 [Pictorem](https://www.pictorem.com) using the customer's payment.
 
+> 🚀 **Setting up the actual business?** Start with the non-technical, step-by-step
+> playbook in **[`setup/README.md`](setup/README.md)** — domain, hosting, email,
+> payments, going live, and more.
+
 ---
 
 ## Quick start
