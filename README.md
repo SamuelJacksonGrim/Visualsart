@@ -2,6 +2,12 @@
 
 # Visualart
 
+[![License: AGPL-3.0-only](https://img.shields.io/badge/license-AGPL--3.0--only-blue)](LICENSE)
+[![dual-license](https://img.shields.io/badge/dual--license-AGPL--3.0--only%20or%20commercial-blueviolet)](LICENSING.md)
+[![CI](https://github.com/SamuelJacksonGrim/Visualsart/actions/workflows/deploy.yml/badge.svg)](https://github.com/SamuelJacksonGrim/Visualsart/actions/workflows/deploy.yml)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
+
+
 ### Where your photographs become canvas art.
 
 A curated, performant gallery for original photography — browse, choose a

@@ -12,5 +12,5 @@
     "validate": "node scripts/validate-catalog.mjs"
   },
   "keywords": ["photography", "gallery", "canvas", "art", "static-site"],
-  "license": "MIT"
+  "license": "AGPL-3.0-only"
 }
